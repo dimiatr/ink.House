@@ -29,7 +29,7 @@
                 </a>
                 <hr class="border-[#C3D1C6] w-full hidden md:block lg:hidden">
                 <nav
-                    class="w-full lg:w-auto flex justify-between lg:justify-normal items-center gap-14 text-firm_black font-medium text-xl lg:text-lg bg-firm_lGreen p-4 md:p-0 relative">
+                    class="w-full lg:w-auto flex justify-between lg:justify-normal items-center gap-14 text-firm_black font-medium text-xl lg:text-lg bg-firm_lGreen p-4 md:p-0 relative *:transition-all *:duration-300 hover:*:text-firm_hoverGreen focus:*:bg-firm_focusGreen active:*:text-firm_hGreen">
                     <a href="#" class="hidden md:block">Репродукции</a>
                     <a href="#" class="hidden md:block">Новинки</a>
                     <a href="#" class="hidden md:block">О нас</a>
@@ -53,7 +53,8 @@
                                         fill="#2C2D35" />
                                 </svg>
                             </button>
-                            <div class="md:hidden flex flex-col gap-4">
+                            <div
+                                class="md:hidden flex flex-col gap-4 *:transition-all *:duration-300 hover:*:text-firm_hoverGreen focus:*:bg-firm_focusGreen active:*:text-firm_hGreen">
                                 <a href="#">Репродукции</a>
                                 <a href="#">Новинки</a>
                                 <a href="#">О нас</a>
@@ -92,11 +93,21 @@
                             Реплики картин от
                             <span class="text-firm_hGreen">ink.House</span>
                         </h1>
-                        <h3 class="text-firm_gray text-sm md:text-base lg:text-lg ">Высокое качество отрисовки на плотной бумаге или льняном
+                        <h3 class="text-firm_gray text-sm md:text-base lg:text-lg ">Высокое качество отрисовки на
+                            плотной бумаге или льняном
                             холсте. Редкие произведения, доступные цены.</h3>
-                        <button class="border border-firm_hGreen py-[14px] lg:py-[18px] xl:py-5 px-7 md:px-[41px] lg:px-[52px] xl:px-[60px] md:text-lg lg:text-xl text-firm_hGreen max-w-[227px] mt-5 md:mt-0 lg:mt-5 xl:mt-10">Продукция</button>
+                        <button
+                            class="border border-firm_hGreen py-[14px] lg:py-[18px] xl:py-5 px-7 md:px-[41px] lg:px-[52px] xl:px-[60px] md:text-lg lg:text-xl text-firm_hGreen max-w-[227px] mt-5 md:mt-0 lg:mt-5 xl:mt-10 transition-all duration-300 hover:bg-firm_hoverGreen hover:border-firm_hoverGreen hover:text-white focus:bg-firm_hGreen focus:text-white active:bg-firm_focusGreen active:text-firm_hGreen">Продукция</button>
                     </div>
                 </section>
+                <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between font-medium gap-5">
+                    <h2 class="text-firm_black text-2xl lg:text-3xl xl:text-[40px]">Репродукции</h2>
+                    <div class="scroll flex items-center gap-8 *:bg-firm_focusGreen *:w-max *:px-4 *:py-1 *:rounded-[20px] *:text-firm_black *:transition-all *:duration-300 hover:*:bg-firm_hoverGreen hover:*:border-firm_hoverGreen hover:*:text-white focus:*:bg-firm_hGreen focus:*:text-white active:*:bg-firm_focusGreen active:*:text-firm_hGreen *:text-2xl flex-nowrap overflow-x-auto">
+                        <button >Франция</button>
+                        <button >Германия</button>
+                        <button >Англия</button>
+                    </div>
+                </div>
             </div>
         </main>
         <footer></footer>
