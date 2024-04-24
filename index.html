@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <main class="flex flex-col min-h-screen font-Raleway">
+    <div class="flex flex-col min-h-screen font-Raleway">
         <header class="md:bg-firm_lGreen">
             <div
                 class="max-w-screen-xl mx-auto md:py-8 md:px-4 flex flex-col lg:flex-row lg:justify-between items-center md:gap-3">
@@ -41,7 +41,7 @@
                         </svg>
                     </button>
                     <div id="menu" class="hidden">
-                        <div  class="absolute z-10 left-0 top-0 md:hidden flex flex-col gap-5 bg-firm_lGreen w-full p-4">
+                        <div class="absolute z-10 left-0 top-0 md:hidden flex flex-col gap-5 bg-firm_lGreen w-full p-4">
                             <button id="closeMenu">
                                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -83,9 +83,24 @@
                 </nav>
             </div>
         </header>
-        <section></section>
+        <main class="flex-1">
+            <div class="flex flex-col gap-12 lg:gap-[70px] max-w-screen-xl mx-auto px-4">
+                <section class="flex items-center gap-7 mt-12 lg:mt-0">
+                    <img src="img/bird.jpg" alt="bird" class="xl:w-[540px] lg:w-[330px] md:w-[195px] hidden md:block">
+                    <div class="flex flex-col gap-5 md:gap-[10px] lg:gap-5 font-medium">
+                        <h1 class="text-firm_black text-3xl md:text-4xl lg:text-[40px] xl:text-[60px] xl:leading-none">
+                            Реплики картин от
+                            <span class="text-firm_hGreen">ink.House</span>
+                        </h1>
+                        <h3 class="text-firm_gray text-sm md:text-base lg:text-lg ">Высокое качество отрисовки на плотной бумаге или льняном
+                            холсте. Редкие произведения, доступные цены.</h3>
+                        <button class="border border-firm_hGreen py-[14px] lg:py-[18px] xl:py-5 px-7 md:px-[41px] lg:px-[52px] xl:px-[60px] md:text-lg lg:text-xl text-firm_hGreen max-w-[227px] mt-5 md:mt-0 lg:mt-5 xl:mt-10">Продукция</button>
+                    </div>
+                </section>
+            </div>
+        </main>
         <footer></footer>
-    </main>
+    </div>
     <script src="index.js"></script>
 </body>
 
