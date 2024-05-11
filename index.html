@@ -16,7 +16,7 @@
     <div class="flex flex-col min-h-screen font-Raleway">
         <header class="md:bg-firm_lGreen">
             <div
-                class="max-w-screen-xl mx-auto md:py-8 md:px-4 flex flex-col lg:flex-row lg:justify-between items-center md:gap-3">
+                class="max-w-screen-xxl mx-auto md:py-8 md:px-4 flex flex-col lg:flex-row lg:justify-between items-center md:gap-3">
                 <a href="#" title="Главная страница" class="p-4 md:p-0">
                     <svg width="143" height="35" viewBox="0 0 143 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -85,7 +85,7 @@
             </div>
         </header>
         <main class="flex-1">
-            <div class="flex flex-col gap-12 lg:gap-[70px] max-w-screen-xl mx-auto px-4">
+            <div class="flex flex-col gap-12 lg:gap-[70px] max-w-screen-xxl mx-auto px-4">
                 <section class="flex items-center gap-7 mt-12 lg:mt-0">
                     <img src="img/bird.jpg" alt="bird" class="xl:w-[540px] lg:w-[330px] md:w-[195px] hidden md:block">
                     <div class="flex flex-col gap-5 md:gap-[10px] lg:gap-5 font-medium">
@@ -102,11 +102,16 @@
                 </section>
                 <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between font-medium gap-5">
                     <h2 class="text-firm_black text-2xl lg:text-3xl xl:text-[40px]">Репродукции</h2>
-                    <div class="scroll flex items-center gap-8 *:bg-firm_focusGreen *:w-max *:px-4 *:py-1 *:rounded-[20px] *:text-firm_black *:transition-all *:duration-300 hover:*:bg-firm_hoverGreen hover:*:border-firm_hoverGreen hover:*:text-white focus:*:bg-firm_hGreen focus:*:text-white active:*:bg-firm_focusGreen active:*:text-firm_hGreen *:text-2xl flex-nowrap overflow-x-auto">
-                        <button >Франция</button>
-                        <button >Германия</button>
-                        <button >Англия</button>
+                    <div
+                        class="scroll flex items-center gap-8 *:bg-firm_focusGreen *:w-max *:px-4 *:py-1 *:rounded-[20px] *:text-firm_black *:transition-all *:duration-300 hover:*:bg-firm_hoverGreen hover:*:border-firm_hoverGreen hover:*:text-white focus:*:bg-firm_hGreen focus:*:text-white active:*:bg-firm_focusGreen active:*:text-firm_hGreen *:text-2xl flex-nowrap overflow-x-auto">
+                        <button>Франция</button>
+                        <button>Германия</button>
+                        <button>Англия</button>
                     </div>
+                </div>
+                <div id="cards"
+                    class="flex items-center gap-8 flex-nowrap overflow-x-auto xl:grid xl:grid-cols-3 xl:gap-[30px] font-medium scroll">
+                        
                 </div>
             </div>
         </main>
