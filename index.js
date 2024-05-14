@@ -53,42 +53,42 @@ const arrFrance = [
 
 const arrGermany = [
     {
-        img: 'img/Germany1.png',
+        img: 'img/germany1.png',
         author: 'Курт Вернер',
         name: 'Над городом',
         description: 'Цветная литография (40х60) ',
         price: 16000,
     },
     {
-        img: 'img/Germany2.png',
+        img: 'img/germany2.png',
         author: 'Макс Рихтер',
         name: 'Птенцы',
         description: 'Холст, масло (50х80) ',
         price: 14500,
     },
     {
-        img: 'img/Germany3.png',
+        img: 'img/germany3.png',
         author: 'Мартин Майер',
         name: 'Среди листьев',
         description: 'Цветная литография (40х60) ',
         price: 20000,
     },
     {
-        img: 'img/Germany4.png',
+        img: 'img/germany4.png',
         author: 'Герман Беккер',
         name: 'Яркая птица',
         description: 'Цветная литография (40х60) ',
         price: 13000,
     },
     {
-        img: 'img/Germany5.png',
+        img: 'img/germany5.png',
         author: 'Вульф Бауэр',
         name: 'Дятлы',
         description: 'Бумага, акрил (50х80) ',
         price: 20000,
     },
     {
-        img: 'img/Germany6.png',
+        img: 'img/germany6.png',
         author: 'Вальтер Хартманн',
         name: 'Большие воды',
         description: 'Бумага, акрил (50х80) ',

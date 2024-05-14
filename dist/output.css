@@ -603,10 +603,6 @@ video {
   width: 100%;
 }
 
-.min-w-\[340px\] {
-  min-width: 340px;
-}
-
 .max-w-\[227px\] {
   max-width: 227px;
 }
@@ -647,10 +643,6 @@ video {
   gap: 3.5rem;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -667,16 +659,8 @@ video {
   gap: 2rem;
 }
 
-.gap-\[10px\] {
-  gap: 10px;
-}
-
 .overflow-x-auto {
   overflow-x: auto;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .border {
@@ -693,32 +677,13 @@ video {
   border-color: rgb(55 107 68 / var(--tw-border-opacity));
 }
 
-.border-firm_hoverGreen {
-  --tw-border-opacity: 1;
-  border-color: rgb(89 141 102 / var(--tw-border-opacity));
-}
-
 .bg-firm_lGreen {
   --tw-bg-opacity: 1;
   background-color: rgb(225 237 230 / var(--tw-bg-opacity));
 }
 
-.bg-firm_focusGreen {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 232 217 / var(--tw-bg-opacity));
-}
-
-.bg-firm_hGreen {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 107 68 / var(--tw-bg-opacity));
-}
-
 .p-4 {
   padding: 1rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-4 {
@@ -729,11 +694,6 @@ video {
 .px-7 {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
 }
 
 .py-\[14px\] {
@@ -753,15 +713,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-\[30px\] {
-  font-size: 30px;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-sm {
@@ -793,32 +744,14 @@ video {
   color: rgb(55 107 68 / var(--tw-text-opacity));
 }
 
-.text-firm_hoverGreen {
-  --tw-text-opacity: 1;
-  color: rgb(89 141 102 / var(--tw-text-opacity));
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
-}
-
 .duration-300 {
   transition-duration: 300ms;
-}
-
-.ease-linear {
-  transition-timing-function: linear;
 }
 
 .scroll {
@@ -865,19 +798,9 @@ video {
   transition-duration: 300ms;
 }
 
-.hover\:border-firm_hGreen:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(55 107 68 / var(--tw-border-opacity));
-}
-
 .hover\:border-firm_hoverGreen:hover {
   --tw-border-opacity: 1;
   border-color: rgb(89 141 102 / var(--tw-border-opacity));
-}
-
-.hover\:bg-firm_hGreen:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 107 68 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-firm_hoverGreen:hover {
