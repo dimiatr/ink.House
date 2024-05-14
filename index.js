@@ -1,9 +1,148 @@
 const openMenu = document.getElementById('openMenu');
 const closeMenu = document.getElementById('closeMenu');
 const menu = document.getElementById('menu');
+const cards = document.getElementById('cards');
+const productsBtn = document.querySelectorAll('.productsBtn');
+const products = document.getElementById('products');
+const country = products.firstElementChild.nextElementSibling.querySelectorAll('*');
 
-function toggleMenu (id, menu) {
-    id.addEventListener('click', ()=> {
+const arrFrance = [
+    {
+        img: 'img/france1.png',
+        author: 'Марсель Руссо',
+        name: 'Охота Амура',
+        description: 'Холст, масло (50х80)',
+        price: 14500,
+    },
+    {
+        img: 'img/france2.png',
+        author: 'Анри Селин',
+        name: 'Дама с собачкой',
+        description: 'Акрил, бумага (50х80)',
+        price: 16500,
+    },
+    {
+        img: 'img/france3.png',
+        author: 'Франсуа Дюпон',
+        name: 'Процедура',
+        description: 'Цветная полиграфия (40х60)',
+        price: 200000,
+    },
+    {
+        img: 'img/france4.png',
+        author: 'Луи Детуш',
+        name: 'Роза',
+        description: 'Бумага, акрил (50х80)',
+        price: 12000,
+    },
+    {
+        img: 'img/france5.png',
+        author: 'Франсуа Дюпон',
+        name: 'Птичья трапеза',
+        description: 'Цветная полиграфия (40х60)',
+        price: 22500,
+    },
+    {
+        img: 'img/france6.png',
+        author: 'Пьер Моранж',
+        name: 'Пейзаж с рыбой',
+        description: 'Цветная полиграфия (40х60)',
+        price: 200000,
+    },
+]
+
+const arrGermany = [
+    {
+        img: 'img/Germany1.png',
+        author: 'Курт Вернер',
+        name: 'Над городом',
+        description: 'Цветная литография (40х60) ',
+        price: 16000,
+    },
+    {
+        img: 'img/Germany2.png',
+        author: 'Макс Рихтер',
+        name: 'Птенцы',
+        description: 'Холст, масло (50х80) ',
+        price: 14500,
+    },
+    {
+        img: 'img/Germany3.png',
+        author: 'Мартин Майер',
+        name: 'Среди листьев',
+        description: 'Цветная литография (40х60) ',
+        price: 20000,
+    },
+    {
+        img: 'img/Germany4.png',
+        author: 'Герман Беккер',
+        name: 'Яркая птица',
+        description: 'Цветная литография (40х60) ',
+        price: 13000,
+    },
+    {
+        img: 'img/Germany5.png',
+        author: 'Вульф Бауэр',
+        name: 'Дятлы',
+        description: 'Бумага, акрил (50х80) ',
+        price: 20000,
+    },
+    {
+        img: 'img/Germany6.png',
+        author: 'Вальтер Хартманн',
+        name: 'Большие воды',
+        description: 'Бумага, акрил (50х80) ',
+        price: 23000,
+    },
+]
+
+const arrEngland = [
+    {
+        img: 'img/England1.png',
+        author: 'Пол Смит',
+        name: 'Дикий зверь',
+        description: 'Акварель, бумага (50х80) ',
+        price: 19500,
+    },
+    {
+        img: 'img/England2.png',
+        author: 'Джон Уайт',
+        name: 'Скалистый берег',
+        description: 'Цветная литография (40х60) ',
+        price: 17500,
+    },
+    {
+        img: 'img/England3.png',
+        author: 'Джим Уотсон',
+        name: 'Река и горы',
+        description: 'Акварель, бумага (50х80) ',
+        price: 20500,
+    },
+    {
+        img: 'img/England4.png',
+        author: 'Юджин Зиллион',
+        name: 'Белый попугай',
+        description: 'Цветная литография (40х60) ',
+        price: 15500,
+    },
+    {
+        img: 'img/England5.png',
+        author: 'Эрик Гиллман',
+        name: 'Ночная рыба',
+        description: 'Бумага, акрил (50х80) ',
+        price: 12500,
+    },
+    {
+        img: 'img/England6.png',
+        author: 'Альфред Барр',
+        name: 'Рыжий кот',
+        description: 'Цветная литография (40х60) ',
+        price: 21000,
+    },
+]
+
+function toggleMenu(id, menu) {
+    id.addEventListener('click', () => {
         menu.classList.toggle('hidden');
     })
 }
@@ -11,62 +150,61 @@ function toggleMenu (id, menu) {
 toggleMenu(openMenu, menu);
 toggleMenu(closeMenu, menu);
 
-const arrFrance = [
-    {
-        img:'img/france1.png',
-        author:'Марсель Руссо',
-        name:'Охота Амура',
-        description:'Холст, масло (50х80)',
-        price:14500,
-    },
-    {
-        img:'img/france2.png',
-        author:'Анри Селин',
-        name:'Дама с собачкой',
-        description:'Акрил, бумага (50х80)',
-        price: 16500,
-    },
-    {
-        img:'img/france3.png',
-        author:'Франсуа Дюпон',
-        name:'Процедура',
-        description:'Цветная полиграфия (40х60)',
-        price:200000,
-    },
-    {
-        img:'img/france4.png',
-        author:'Луи Детуш',
-        name:'Роза',
-        description:'Бумага, акрил (50х80)',
-        price:12000,
-    },
-    {
-        img:'img/france5.png',
-        author:'Франсуа Дюпон',
-        name:'Птичья трапеза',
-        description:'Цветная полиграфия (40х60)',
-        price:22500,
-    },
-    {
-        img:'img/france6.png',
-        author:'Пьер Моранж',
-        name:'Пейзаж с рыбой',
-        description:'Цветная полиграфия (40х60)',
-        price:200000,
-    },
-]
+country.forEach(btnCountry => {
+    const stateDefaultBtn = ['bg-firm_focusGreen', 'text-firm_black'];
+    const activeStateBtn = ['bg-firm_hGreen', 'text-white'];
+    const btnDefault = country[0];
 
-const cards = document.getElementById('cards');
+    btnCountry.id === btnDefault.id ? activeStateBtn.map(className => btnDefault.classList.add(className)) : stateDefaultBtn.map(className => btnCountry.classList.add(className));
 
-document.addEventListener('DOMContentLoaded', () => {
-    arrFrance.map(el => {
-        createCard(cards, el.img, el.author, el.name, el.description, el.price)
+    if (btnCountry.className.includes('text-white')) {
+        arrFrance.map(el => {
+            createCard(cards, el.img, el.author, el.name, el.description, el.price);
+        })
+    }
+
+    btnCountry.addEventListener('click', (e) => {
+        country.forEach(btn => {
+            activeStateBtn.map(className => btn.classList.remove(className));
+            stateDefaultBtn.map(className => btn.classList.add(className));
+            if (e.currentTarget) {
+                stateDefaultBtn.map(className => e.currentTarget.classList.remove(className));
+                activeStateBtn.map(className => e.currentTarget.classList.add(className));
+            }
+        })
+        cards.innerHTML = '';
+        let howCountryBtn = e.currentTarget.id;
+        switch (howCountryBtn) {
+            case 'fr': {
+                cards.innerHTML = '';
+                arrFrance.map(el => {
+                    createCard(cards, el.img, el.author, el.name, el.description, el.price);
+                })
+                break
+            }
+            case 'ge': {
+                cards.innerHTML = '';
+                arrGermany.map(el => {
+                    createCard(cards, el.img, el.author, el.name, el.description, el.price);
+                })
+                break
+            }
+            case 'en': {
+                cards.innerHTML = '';
+                arrEngland.map(el => {
+                    createCard(cards, el.img, el.author, el.name, el.description, el.price);
+                })
+                break
+            }
+        }
     })
 })
 
 
-function createCard (arg, pathImg, author, name, description, price) {
-    
+
+
+function createCard(arg, pathImg, author, name, description, price) {
+
     let article = document.createElement('article');
     let figure = document.createElement('figure');
     let img = document.createElement('img');
@@ -76,7 +214,7 @@ function createCard (arg, pathImg, author, name, description, price) {
     let h5 = document.createElement('h5');
     let p = document.createElement('p');
     let button = document.createElement('button');
-    
+
     arg.append(article);
     article.classList.add('p-5', 'bg-firm_lGreen', 'flex', 'flex-col', 'gap-[10px]', 'min-w-[340px]')
     article.append(figure);
@@ -104,11 +242,17 @@ function createCard (arg, pathImg, author, name, description, price) {
         div.classList.add('flex', 'flex-col', 'mt-5', 'gap-5', 'text-firm_hoverGreen')
         div.append(p);
         p.classList.add('text-2xl');
-        let format = String(price).slice(0,2) + ' ' + String(price).slice(2);
+        let format = String(price).slice(0, 2) + ' ' + String(price).slice(2);
         p.textContent = format + 'руб';
         div.append(button);
-        button.classList.add('border', 'border-firm_hoverGreen', 'rounded', 'py-5', 'text-xl')
-        button.textContent = 'В корзину'
+        button.classList.add('border', 'border-firm_hoverGreen', 'rounded', 'py-5', 'text-xl', 'transition-all', 'duration-200', 'ease-linear', 'hover:bg-firm_hGreen', 'hover:text-white', 'hover:border-firm_hGreen');
+        button.textContent = 'В корзину';
     }
 }
 
+
+productsBtn.forEach(el => {
+    el.addEventListener('click', () => {
+        products.scrollIntoView({ behavior: 'smooth' });
+    })
+})
