@@ -177,6 +177,7 @@ country.forEach(btnCountry => {
         switch (howCountryBtn) {
             case 'fr': {
                 cards.innerHTML = '';
+                cards.scrollIntoView({behavior:'smooth'});
                 arrFrance.map(el => {
                     createCard(cards, el.img, el.author, el.name, el.description, el.price);
                 })
@@ -184,6 +185,7 @@ country.forEach(btnCountry => {
             }
             case 'ge': {
                 cards.innerHTML = '';
+                cards.scrollIntoView({behavior:'smooth'});
                 arrGermany.map(el => {
                     createCard(cards, el.img, el.author, el.name, el.description, el.price);
                 })
@@ -191,6 +193,7 @@ country.forEach(btnCountry => {
             }
             case 'en': {
                 cards.innerHTML = '';
+                cards.scrollIntoView({behavior:'smooth'});
                 arrEngland.map(el => {
                     createCard(cards, el.img, el.author, el.name, el.description, el.price);
                 })
